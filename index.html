@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Flip card memory</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>FLIP CARD MEMORY GAME</h1>
+  </header>
+  <main class="main-wrap">
+    <section id="section" class="card-section"></section>
+    <section class="data-section">
+      <div class="top-players">
+        <h1>🏆 TOP PLAYERS 🏆</h1>
+        <h3>LEAST NUMBER OF ATTEMPTS</h3>
+        <div class="winner-list">
+          <table class="winner-data">
+            <tr>
+              <td>#</td>
+              <td class="table-name">NAME</td>
+              <td class="table-number">ATTEMPTS</td>
+            </tr>
+            <tbody>
+              <tr>
+                <td>1st</td>
+                <td class="player-1-name" id="player1Name"></td>
+                <td class="player-1-score" id="player1Score"></td>
+              </tr>
+              <tr>
+                <td>2nd</td>
+                <td class="player-2-name" id="player2Name"></td>
+                <td class="player-2-score" id="player2Score"></td>
+              </tr>
+              <tr>
+                <td>3rd</td>
+                <td class="player-3-name" id="player3Name"></td>
+                <td class="player-3-score" id="player3Score"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="data-section__mobile">
+        <div class="status-bar-container">
+          <p class="status-bar" id="statusBar">FLIP A CARD AND FIND THE MATCH!</p>
+        </div>
+        <div class="score-section">
+          <h1>RIGHT: <span class="right-guess"></span></h1>
+          <h1>WRONG: <span class="wrong-guess"></span></h1>
+        </div>
+        <p>TOTAL ATTEMPTS: <span id="total-attempts"></span></p>
+        <button class="reset-game-btn hidden" id="resetGameBtn">RESET GAME</button>
+      </div>
+    </section>
+  </main>    
+  <script src="app.js"></script>
+</body>
+</html>
